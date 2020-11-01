@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import { useForm } from '@forms/useform'
+import { useForm } from 'useforms'
 import Select from 'react-select'
 import DatePicker from 'react-datepicker'
 import { Row, Col } from 'react-grid-system'

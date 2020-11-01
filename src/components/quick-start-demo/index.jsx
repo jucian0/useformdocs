@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-grid-system'
 import { Input, Range, ContainerJsonView, Button, Buttons } from '..'
 import JSONPretty from 'react-json-pretty'
-import { useForm } from '@forms/useform'
+import { useForm } from 'useforms'
 
 const initialValues = {
   name: 'Jesse',

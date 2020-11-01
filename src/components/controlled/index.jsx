@@ -15,33 +15,34 @@ const initialValues = {
 }
 
 export default function Controlled() {
-  const [{ values, reset, onSubmit }, { input }] = useForm({
-    onChange: true,
+  const { state, resetForm, onSubmit, register } = useForm({
+    isControlled: true,
     initialValues
   })
 
   return (
     <Row>
       <Col sm={6}>
-        <form onSubmit={onSubmit(e => console.log(e))} onReset={reset}>
-          <Input placeholder="data1" {...input('data1', 'text')} />
+        <form onSubmit={onSubmit(e => console.log(e))} onReset={resetForm}>
+          <Input placeholder="First Input" {...register('data1')} />
           <Input
-            placeholder="complexData.0.first"
-            {...input('complexData.0.first', 'text')}
+            placeholder="First"
+            {...register('complexData.0.first')}
           />
           <Input
-            placeholder="complexData.0.score"
-            {...input({ name: 'complexData.0.score', type: 'number' })}
+          type="number"
+            placeholder="Score"
+            {...register('complexData.0.score')}
           />
           <Buttons>
-            <Button type="reset">Reset</Button>
+            <Button type="reset">ResetForm</Button>
             <Button type="submit">Submit</Button>
           </Buttons>
         </form>
       </Col>
       <Col sm={6}>
         <ContainerJsonView>
-          <JSONPretty id="json-pretty" data={values}></JSONPretty>
+          <JSONPretty id="json-pretty" data={state.values}></JSONPretty>
         </ContainerJsonView>
       </Col>
     </Row>

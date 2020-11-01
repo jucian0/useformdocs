@@ -25,7 +25,7 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://github.com/jucian0/useform',
+          href: 'https://github.com/useform/useform',
           label: 'GitHub',
           position: 'right',
         },
@@ -40,7 +40,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/Jucian0/useform/tree/docs',
+            'https://github.com/useform/docs',
         },
         themes: ['@docusaurus/theme-classic', '@docusaurus/theme-live-codeblock'],
         theme: {
