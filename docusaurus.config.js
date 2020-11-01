@@ -19,7 +19,7 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/get-starter',
+          to: 'docs/quick-start',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
