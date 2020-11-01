@@ -40,7 +40,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/useform/',
+            'https://github.com/useform/docs/tree/main',
         },
         themes: ['@docusaurus/theme-classic', '@docusaurus/theme-live-codeblock'],
         theme: {
