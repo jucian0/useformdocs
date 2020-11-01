@@ -30,11 +30,11 @@ function Home() {
             </Link>
           </div>
             <div style={{margin:30}}>
-              <a href="https://github.com/Jucian0/useform/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Jucian0/useform"/> </a>
+              <a href="https://github.com/useform/useform/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/useform/useform"/> </a>
               <a href="https://bundlephobia.com/result?p=useforms@1.0.3"><img alt="npm bundle size" src="https://img.shields.io/bundlephobia/min/useforms"/> </a>
               <a href="https://bundlephobia.com/result?p=useforms@1.0.3"><img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/useforms"/> </a>
-              <a href="https://github.com/Jucian0/useform"><img alt="GitHub stars" src="https://img.shields.io/github/stars/jucian0/useform?style=social"/> </a>
-              <a href="https://github.com/Jucian0/useform"><img alt="GitHub forks" src="https://img.shields.io/github/forks/jucian0/useform?style=social"/> </a>
+              <a href="https://github.com/useform/useform"><img alt="GitHub stars" src="https://img.shields.io/github/stars/useform/useform?style=social"/> </a>
+              <a href="https://github.com/useform/useform"><img alt="GitHub forks" src="https://img.shields.io/github/forks/useform/useform?style=social"/> </a>
             </div>
         </div>
       </header>
