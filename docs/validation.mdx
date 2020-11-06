@@ -5,7 +5,7 @@ description: By default, useForm work with yup validation schema, and you can pa
 sidebar_label: Validation
 ---
 
-import Validation from './../src/components/validation'
+import Validation from "./../src/components/validation";
 
 ## Description
 
@@ -22,44 +22,44 @@ You can discover this information with an object called touched, this object has
 Validation is performed whenever the state is changed. By default, `useForm` uses the uncontrolled inputs option, this means that the values ​​are accessible when the onSubmit event is dispatched.
 
 ```jsx
-import { useForm } from 'useforms'
-import * as yup from 'yup'
+import { useForm } from "@use-form/use-form";
+import * as yup from "yup";
 
 const initialValues = {
-  name: 'Jesse',
-  email: 'jesse@jesse.com',
-  pets: ['felix'],
-  accept: false
-}
+  name: "Jesse",
+  email: "jesse@jesse.com",
+  pets: ["felix"],
+  accept: false,
+};
 
 const validation = yup.object().shape({
-  name: yup.string().required('This field is required'),
+  name: yup.string().required("This field is required"),
   email: yup
     .string()
-    .email('This field must be a valid e-mail')
-    .required('This field is required'),
-  pets: yup.array(yup.string().required('This field is required')),
-  accept: yup.bool().oneOf([true], 'Field must be checked')
-})
+    .email("This field must be a valid e-mail")
+    .required("This field is required"),
+  pets: yup.array(yup.string().required("This field is required")),
+  accept: yup.bool().oneOf([true], "Field must be checked"),
+});
 
 function ControlledForm() {
   const { register, state } = useForm({
     isControlled: true,
     initialValues,
-    validationSchema
-  })
+    validationSchema,
+  });
   return (
     <>
-      <input {...register('name')} />
+      <input {...register("name")} />
       <span>{touched.name && errors.name}</span>
-      <input type="email" {...register('email')} />
+      <input type="email" {...register("email")} />
       <span>{touched.email && errors.email}</span>
-      <input {...register('pets.0')} />
+      <input {...register("pets.0")} />
       <span>{touched.pets?.[0] && errors.pets?.[0]}</span>
-      <input type="checkbox" {...register('accept')} />
+      <input type="checkbox" {...register("accept")} />
       <span>{touched.accept && errors.accept}</span>
     </>
-  )
+  );
 }
 ```
 

@@ -5,7 +5,7 @@ title: React form with Custom Input
 sidebar_label: Custom Field
 ---
 
-import Custom from './../src/components/custom'
+import Custom from "./../src/components/custom";
 
 ## Description
 
@@ -26,44 +26,44 @@ When you use a custom input every change that happened in the input state is rep
 Use dot notation to create advanced objects or to map object values. Type an entry name and type or an entry property object.
 
 ```jsx
-import { useForm } from 'useforms'
-import Select from 'react-select'
-import DatePicker from 'react-datepicker'
+import { useForm } from "@use-form/use-form";
+import Select from "react-select";
+import DatePicker from "react-datepicker";
 
 const initialValues = {
   candies: {
-    iceCream: [{ value: 'chocolate', label: 'Chocolate' }]
+    iceCream: [{ value: "chocolate", label: "Chocolate" }],
   },
-  date: new Date('05/26/2020')
-}
+  date: new Date("05/26/2020"),
+};
 
 const options = [
-  { value: 'chocolate', label: 'Chocolate' },
-  { value: 'strawberry', label: 'Strawberry' },
-  { value: 'vanilla', label: 'Vanilla' }
-]
+  { value: "chocolate", label: "Chocolate" },
+  { value: "strawberry", label: "Strawberry" },
+  { value: "vanilla", label: "Vanilla" },
+];
 
 function ControlledForm() {
   const { setFieldValue, setFieldTouched } = useForm({
     isControlled: true,
-    initialValues
-  })
+    initialValues,
+  });
   return (
     <>
       <Select
         options={options}
-        onChange={e => setFieldValue('candies.iceCream', e)}
-        onChange={() => setFieldValue('candies.iceCrem')}
+        onChange={(e) => setFieldValue("candies.iceCream", e)}
+        onChange={() => setFieldValue("candies.iceCrem")}
       />
       <DatePicker
         className="form-control mw-100"
         showPopperArrow={false}
         selected={values.date}
-        onChange={e => setFieldValue('date', e.value)}
-        onChange={() => setFieldValue('date')}
+        onChange={(e) => setFieldValue("date", e.value)}
+        onChange={() => setFieldValue("date")}
       />
     </>
-  )
+  );
 }
 ```
 
