@@ -1,11 +1,14 @@
----
-id: uncontrolled-form
-title: React form with Uncontrolled Input
-description: Uncontrolled forms are the most performant way to create react forms. With uncontrolled input values, there is no updating or changing of any states. What you submit is what you get.
-sidebar_label: Uncontrolled Form
----
+import { DefaultSeo } from 'next-seo'
+import Demo from '../../components/demo';
 
-import Uncontrolled from "./../src/components/uncontrolled";
+<DefaultSeo
+  title="Uncontrolled form"
+  titleTemplate="Uncontrolled form | useForm"
+  description="Uncontrolled forms are the most performant way to create react forms. With uncontrolled input values, there is no updating or changing of any states. What you submit is what you get.
+sidebar_label: Uncontrolled Form"
+/>
+
+# Uncontrolled forms
 
 ## Description
 
@@ -23,7 +26,7 @@ Uncontrolled inputs are useful when performance is essential. But if the forms t
 Ps \* You can use uncontrolled form with custom inputs but custom inputs use state in your internal logic.
 If you want to use uncontrolled form with custom inputs and native inputs the uncontrolled approach is applied only native inputs.
 
-React Docs
+[React Docs](https://reactjs.org/docs/forms.html)
 
 By default, `useForm` use uncontrolled form, isn't necessary to pass any value to useForm hook if you want to use this kind.
 But when you use this kind of form, it is necessary to realize that values and events validation are available only when onSubmit event is dispatched.
@@ -72,4 +75,4 @@ function handleSubmit(e, isValid){
 
 ## Demo
 
-<Uncontrolled />
+<Demo url="https://codesandbox.io/s/use-form-uncontrolled-form-9ybmz"/>

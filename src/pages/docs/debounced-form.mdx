@@ -1,11 +1,13 @@
----
-id: debounce-form
-description: When you use debounced form the debounce parameter delays the updating of the state until the user has stopped changing inputs for a predetermined amount of time.
-title: React form with Debounce Form
-sidebar_label: Debounce Form
----
+import { DefaultSeo } from 'next-seo'
+import Demo from '../../components/demo';
 
-import Debounce from './../src/components/debounce'
+<DefaultSeo
+  title="Debounced form"
+  titleTemplate="Debounced form | useForm"
+  description="When you use debounced form the debounce parameter delays the updating of the state until the user has stopped changing inputs for a predetermined amount of time."
+/>
+
+# Debounced forms
 
 ## Introduction
 
@@ -19,12 +21,8 @@ a form’s input value via state is considered a controlled component. For contr
 inputs you will need a corresponding state and then a function to update that state
 with changes.
 
-   <span style={{color:"#5bc0be"}}>
-
 
 [React Docs](https://reactjs.org/docs/forms.html)
-
-   </span>
 
 
 <br />
@@ -66,4 +64,4 @@ Use dot notation to create advanced objects or to map object values. Type an ent
 
 ## Demo
 
-<Debounce />
+<Demo url="https://codesandbox.io/s/use-form-debounced-form-co37c"/>

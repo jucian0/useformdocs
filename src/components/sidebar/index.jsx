@@ -44,16 +44,16 @@ const links = [
     link: '',
     subItems: [
       {
-        label: 'How to use',
-        link: '/docs/usage/first-item'
+        label: 'Controlled form',
+        link: '/docs/controlled-form'
       },
       {
         label: 'Debounced form',
-        link: '/docs/usage/second-item'
+        link: '/docs/debounced-form'
       },
       {
         label: 'Uncontrolled form',
-        link: '/docs/usage/last-item'
+        link: '/docs/uncontrolled-form'
       },
     ]
   },
