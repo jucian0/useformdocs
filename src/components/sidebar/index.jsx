@@ -34,8 +34,8 @@ const links = [
         link: '/docs/use-form-api'
       },
       {
-        label: 'useExample()',
-        link: '/docs/api/use-example'
+        label: 'useFormContext()',
+        link: '/docs/use-form-context-api'
       },
     ]
   },

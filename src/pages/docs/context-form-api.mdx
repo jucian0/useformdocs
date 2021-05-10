@@ -6,9 +6,12 @@ import { DefaultSeo } from 'next-seo'
   description="Detail all resources of useContextForm hook and ContextForm."
 />
 
-## FormContext
+# FormContext
 
+## Description
 FormContext provides a way to share a form state to another components in the tree.
+
+## Usage
 
 ```jsx
 
@@ -21,20 +24,4 @@ const form = useForm(...)
 
 </ContextForm.Provider>
 
-```
-
-## useFormContext
-
-`useFormContext` is a custom hook, this hook provides the same useForm hook API. If using typescript should pass type of the values.
-
-This hook only will work if there is a parent with FormContext.
-
-More details about React context https://reactjs.org/docs/context.html.
-
-```jsx
-
-const {register, ...form} = useFormContext()
-
-
-<input placeholder="Name" {register('otherPerson.name')}/>
 ```
