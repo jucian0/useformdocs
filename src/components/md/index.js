@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const H1 = styled.h1`
-   color:${({theme})=> theme.colors.headingColor};
+   color:${({ theme }) => theme.colors.headingColor};
    font-weight:bold;
    font-size: 2em;
     margin-top: 1.6em;
@@ -12,7 +12,7 @@ export const H1 = styled.h1`
 
 export const H2 = styled.h2`
    font-size:1.4285714em;
-   color:${({theme})=> theme.colors.headingColor};
+   color:${({ theme }) => theme.colors.headingColor};
    font-weight:bold;
    margin-top: 1.6em;
    margin-bottom: .8em;
@@ -21,7 +21,7 @@ export const H2 = styled.h2`
 `
 
 export const H3 = styled.h2`
-   color:${({theme})=> theme.colors.headingColor};
+   color:${({ theme }) => theme.colors.headingColor};
    font-size: 1.2857143em;
    margin-top: 1.5555556em;
    margin-bottom: .4444444em;
@@ -31,7 +31,7 @@ export const H3 = styled.h2`
 
 export const H4 = styled.h2`
    font-size:1rem;
-   color:${({theme})=> theme.colors.headingColor};
+   color:${({ theme }) => theme.colors.headingColor};
    font-weight:bold;
    margin-top: 1.6em;
    margin-bottom: .8em;
@@ -41,7 +41,7 @@ export const H4 = styled.h2`
 
 export const P = styled.p`
    font-weight:400;
-   color:${({theme})=> theme.colors.textColor};
+   color:${({ theme }) => theme.colors.textColor};
    box-sizing: border-box;
    margin-top: 1.6em;
    margin-bottom: .8em;
@@ -52,7 +52,7 @@ export const P = styled.p`
 
 export const A = styled.a`
    font-weight:600;
-   color:${({theme})=> theme.colors.textColor};
+   color:${({ theme }) => theme.colors.textColor};
    box-sizing: border-box;
    margin-top: 1.6em;
    margin-bottom: .8em;
@@ -61,13 +61,13 @@ export const A = styled.a`
    scroll-margin-top: 1.6em;
    text-decoration:none;
    &:hover{
-      color:${({theme})=> theme.colors.primary};
+      color:${({ theme }) => theme.colors.primary};
    }
 `
 
 export const UL = styled.ul`
    font-weight:400;
-   color:${({theme})=> theme.colors.textColor};
+   color:${({ theme }) => theme.colors.textColor};
    box-sizing: border-box;
    font-size: 1rem;
    scroll-margin-top: 1.6em;
@@ -75,7 +75,7 @@ export const UL = styled.ul`
 
 export const LI = styled.li`
    font-weight:400;
-   color:${({theme})=> theme.colors.textColor};
+   color:${({ theme }) => theme.colors.textColor};
    box-sizing: border-box;
    font-size: 1rem;
    scroll-margin-top: 1.6em;
@@ -89,23 +89,25 @@ export const Image = styled.img`
 `
 
 export const StyledPre = styled.div`
+p{
+   code{
    display:inline;
-   span{
-      background-color:${({theme})=> theme.colors.bkgPre};
+      background-color:${({ theme }) => theme.colors.bkgPre};
       border-radius:.3rem;
       font-size:.75rem;
       font-family:Monospace;
       padding: 0.125rem 0.25rem;
       display:inline;
-      color:${({theme})=> theme.colors.textColor};
+      color:${({ theme }) => theme.colors.textColor};
    }
+}
 `
 
 export const Table = styled.table`
    width: 100%;
    border-spacing: 0;
    border-collapse: collapse;
-   color: ${({theme})=>theme.colors.textColor};
+   color: ${({ theme }) => theme.colors.textColor};
    box-shadow: 0 0.188rem 0.375rem rgba(0,0,0,0.16), 0 0.188rem 0.375rem rgba(0,0,0,0.23);
    border-radius:8px;
 
@@ -138,7 +140,7 @@ export const Table = styled.table`
    thead {
         tr {
             font-size: 1em;
-            border-bottom: solid 0.063rem ${({theme})=>theme.colors.border};
+            border-bottom: solid 0.063rem ${({ theme }) => theme.colors.border};
             line-height: 2.5rem;
             text-align: left;
         }
@@ -148,7 +150,7 @@ export const Table = styled.table`
         tr {
             font-size: 1em;
             line-height: 2.5rem;
-            border-bottom: solid 0.063rem ${({theme})=>theme.colors.border};
+            border-bottom: solid 0.063rem ${({ theme }) => theme.colors.border};
             will-change: red;
 
             &:last-child{
@@ -158,10 +160,10 @@ export const Table = styled.table`
 	}
 `
 
-export function Pre({children}){
+export function Pre({ children }) {
    return (
-     <StyledPre>
-       <span>{children}</span>
-     </StyledPre>
+      <StyledPre>
+         <span>{children}</span>
+      </StyledPre>
    )
 }

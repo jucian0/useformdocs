@@ -16,6 +16,7 @@ const mdComponents = {
   img: Image,
   table: Table,
   Inline: Pre,
+  pre: Pre
 }
 
 export default ({ children }) => (
