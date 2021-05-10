@@ -9,6 +9,7 @@ export const Aside = styled.aside`
   border-right: 1px solid ${({ theme }) => theme.colors.border};
   flex-direction: column;
   padding: 20px 10px 10px 5px;
+  margin-top:50px;
   position: sticky;
   overflow:auto;
   top:60px;
