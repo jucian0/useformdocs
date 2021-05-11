@@ -48,6 +48,17 @@ export const P = styled.p`
    font-size: 1rem;
    line-height: 1.7142857;
    scroll-margin-top: 1.6em;
+
+   code{
+      display:inline;
+      background-color:${({ theme }) => theme.colors.bkgPre};
+      border-radius:.3rem;
+      font-size:.85rem;
+      font-family:Monospace;
+      padding: 0.125rem 0.25rem;
+      display:inline;
+      color:${({ theme }) => theme.colors.textColor};
+   }
 `
 
 export const A = styled.a`
@@ -91,7 +102,7 @@ export const Image = styled.img`
 export const StyledPre = styled.div`
 p{
    code{
-   display:inline;
+      display:inline;
       background-color:${({ theme }) => theme.colors.bkgPre};
       border-radius:.3rem;
       font-size:.75rem;

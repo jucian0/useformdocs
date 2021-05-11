@@ -1,11 +1,13 @@
----
-id: custom-fields
-description: useForm provides a way to use custom inputs like react-date-picker or react-select. The custom inputs receive generics properties, onChange, value, and property to simulate onBlur event. Use React Select, React Datepicker.
-title: React form with Custom Input
-sidebar_label: Custom Field
----
+import { DefaultSeo } from 'next-seo'
+import Demo from '../../components/demo';
 
-import Custom from "./../src/components/custom";
+<DefaultSeo
+  title="Custom fields"
+  titleTemplate="Custom fields | useForm"
+  description="useForm provides a way to use custom inputs like react-date-picker or react-select. The custom inputs receive generics properties, onChange, value, and property to simulate onBlur event. Use React Select, React Datepicker."
+/>
+
+# Custom fields
 
 ## Description
 
@@ -66,7 +68,3 @@ function ControlledForm() {
   );
 }
 ```
-
-## Demo
-
-<Custom />

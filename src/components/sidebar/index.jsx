@@ -55,6 +55,14 @@ const links = [
         label: 'Uncontrolled form',
         link: '/docs/uncontrolled-form'
       },
+      {
+        label: 'Validation',
+        link: '/docs/validation'
+      },
+      {
+        label: 'Custom fields',
+        link: '/docs/custom-field'
+      }
     ]
   },
 ]

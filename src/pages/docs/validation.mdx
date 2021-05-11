@@ -1,11 +1,14 @@
----
-id: validation
-title: React form Validation
-description: By default, useForm work with yup validation schema, and you can pass a validation schema as a parameter in useForm hook.
-sidebar_label: Validation
----
 
-import Validation from "./../src/components/validation";
+import { DefaultSeo } from 'next-seo'
+import Demo from '../../components/demo';
+
+<DefaultSeo
+  title="Form validation"
+  titleTemplate="Form validation| useForm"
+  description="By default, useForm work with yup validation schema, and you can pass a validation schema as a parameter in useForm hook."
+/>
+
+# Forms valodation
 
 ## Description
 
@@ -64,5 +67,4 @@ function ControlledForm() {
 ```
 
 ## Demo
-
-<Validation />
+<Demo url="https://codesandbox.io/s/use-form-validation-form-jmv9e"/>
