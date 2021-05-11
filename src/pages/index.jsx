@@ -9,7 +9,7 @@ import config from '../config'
 const Hero = styled.div`
   padding:80px 50px;
   width:100%;
-  background-color:${({theme})=> theme.colors.primary};
+  background-color:${({ theme }) => theme.colors.primary};
   display:flex;
   justify-content:center;
   align-items:center;
@@ -38,11 +38,11 @@ const Hero = styled.div`
     font-size:1.3em;
     padding:10px 30px;
     border-radius:5px;
-    background-color: ${({theme})=> theme.colors.primary};
+    background-color: ${({ theme }) => theme.colors.primary};
     transition:ease 300ms;
 
     &:hover{
-      color: ${({theme})=> theme.colors.primary};
+      color: ${({ theme }) => theme.colors.primary};
       background-color: #ffffff;
       cursor:pointer;
     }
@@ -52,13 +52,13 @@ const Hero = styled.div`
 const Section = styled.section`
   padding:100px 50px;
   width:100%;
-  background-color:${({theme})=> theme.colors.border};
+  background-color:${({ theme }) => theme.colors.border};
 `
 
 const CodeSandBox = styled.div`
   padding:100px 100px;
   width:100%;
-  background-color:${({theme})=> theme.colors.border};
+  background-color:${({ theme }) => theme.colors.border};
   display:flex;
   justify-content:center;
   align-items:center;
@@ -68,7 +68,7 @@ const CodeSandBox = styled.div`
   h1{
     font-size:3em;
     font-family: 'Roboto',sans-serif;
-    color:${({theme})=>theme.colors.primary};
+    color:${({ theme }) => theme.colors.primary};
     padding:20px;
   }
 
@@ -85,10 +85,10 @@ const CodeSandBox = styled.div`
   `
 
 function Index() {
-  const {push} = useRouter()
+  const { push } = useRouter()
 
-  function redirect(){
-    push('/docs')
+  function redirect() {
+    push('/docs/quick-start')
   }
 
   return (
