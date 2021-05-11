@@ -1,52 +1,60 @@
-import React from "react";
-import { Container, Row, Col } from "react-grid-system";
-import { Input, Range, ContainerJsonView, Button, Buttons } from "./../";
-import JSONPretty from "react-json-pretty";
-import { useForm } from "@use-form/use-form";
+import React from 'react'
+import { DefaultSeo } from 'next-seo'
+import styled from 'styled-components'
+import Iframe from 'react-iframe'
+import { useRouter } from 'next/router'
 
-const initialValues = {
-  name: "Jesse",
-  email: "jesse@jesse.com",
-  pets: ["felix"],
-  others: {},
-};
+const CodeSandBox = styled.div`
+  width:100%;
+  padding:10px 0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
 
-export default function Demo() {
-  const { register, resetForm, resetFieldValue, state } = useForm({
-    initialValues,
-    isControlled: true,
-  });
+
+  h1{
+    font-size:3em;
+    font-family: 'Roboto',sans-serif;
+    color:${({ theme }) => theme.colors.primary};
+    padding:20px;
+  }
+
+  div{
+    width:100%;
+    padding:2px;
+    .sandbox{
+      width:100%;
+      border:none;
+      border-radius:8px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+  }
+
+  `
+
+function Demo(props) {
+  const { push } = useRouter()
+
+  function redirect() {
+    push('/docs')
+  }
 
   return (
-    <>
-      <Row justify="center">
-        <Col md={12} style={{ textAlign: "center" }}>
-          <h1>Controlled Form Demo</h1>
-        </Col>
-      </Row>
-      <Row>
-        <Col sm={6}>
-          <Input placeholder="Name" {...register("name")} />
-          <Input placeholder="E-mail" {...register("email", "email")} />
-          <Input placeholder="Pets 0" {...register("pets.0")} />
-          <Input placeholder="Pets 1" {...register("pets.1")} />
-          <Input placeholder="Others" {...register("others.car.kind")} />
-          <Range {...register("score", "range")} />
-          <Buttons>
-            <Button type="button" onClick={resetForm}>
-              Reset
-            </Button>
-            <Button type="button" onClick={() => resetFieldValue("score")}>
-              Reset Score
-            </Button>
-          </Buttons>
-        </Col>
-        <Col sm={6} style={{ marginTop: 10 }}>
-          <ContainerJsonView>
-            <JSONPretty id="json-pretty" data={state.values}></JSONPretty>
-          </ContainerJsonView>
-        </Col>
-      </Row>
-    </>
-  );
+    <CodeSandBox>
+      <div>
+        <Iframe
+          url={props.url}
+          width="100%"
+          height="700px"
+          className="sandbox"
+          id="myId"
+          display="initial"
+          position="relative"
+        />
+      </div>
+    </CodeSandBox>
+  )
 }
+
+export default Demo
