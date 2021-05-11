@@ -1,8 +1,8 @@
 import React from 'react'
+import Link from 'next/link'
 import { Container, FooterContent, FooterInformation, FooterLogo } from './styles'
 import { Logo } from '../logo'
 import config from '../../config';
-import { Link } from 'next/router'
 
 
 export default function Footer() {
