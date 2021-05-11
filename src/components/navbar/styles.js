@@ -10,9 +10,9 @@ export const Wrapper = styled.nav`
    align-items:center;
    flex-direction: row;
    align-items: center;
-   border-bottom: 1px solid ${({theme})=> theme.colors.border};
+   border-bottom: 1px solid ${({ theme }) => theme.colors.border};
    position:fixed;
-   background-color: ${({theme})=>theme.colors.background};
+   background-color: ${({ theme }) => theme.colors.background};
    z-index:1;
    flex-direction:column;
 `;
@@ -52,13 +52,13 @@ export const Button = styled.button`
    justify-content:center;
 
    & svg{
-      fill:${({theme})=> theme.colors.primary};
+      fill:${({ theme }) => theme.colors.primary};
       width:21px;
       height:21px;
    }
 
    &:hover{
-      background-color:${({theme})=>theme.colors.border};
+      background-color:${({ theme }) => theme.colors.border};
    }
 
    & + button{
@@ -66,8 +66,35 @@ export const Button = styled.button`
    }
 `;
 
+export const ButtonLink = styled.a`
+   border-radius:50%;
+   border:none;
+   cursor: pointer;
+   width:40px;
+   height:40px;
+   outline:none;
+   background-color:transparent;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+
+   & svg{
+      fill:${({ theme }) => theme.colors.primary};
+      width:21px;
+      height:21px;
+   }
+
+   &:hover{
+      background-color:${({ theme }) => theme.colors.border};
+   }
+
+   & + button{
+      margin:5px;
+   }
+`
+
 export const MenuButton = styled(Button)`
-   border:1px solid ${({theme})=> theme.colors.border};
+   border:1px solid ${({ theme }) => theme.colors.border};
 
    @media (min-width:989px){
       display:none;
@@ -87,7 +114,7 @@ export const Links = styled.div`
       font-weight:600;
 
       &:hover{
-         color:${({theme})=> theme.colors.primary};
+         color:${({ theme }) => theme.colors.primary};
       }
    }
 
@@ -102,15 +129,15 @@ export const MobileLink = styled.div`
    width:100%;
    justify-content:flex-end;
    align-items:center;
-   background-color:${({theme})=>theme.colors.background};
-   height:${({isOpen})=> isOpen? 60:10}px;
+   background-color:${({ theme }) => theme.colors.background};
+   height:${({ isOpen }) => isOpen ? 60 : 10}px;
 
    @media (min-width:600px){
       display:none;
    }
 
    div{
-      display:${({isOpen})=> isOpen? 'flex':'none'};
+      display:${({ isOpen }) => isOpen ? 'flex' : 'none'};
       width:100%;
       justify-content:start;
       padding: 0 20px 0 22px;
@@ -121,7 +148,7 @@ export const MobileLink = styled.div`
          font-weight:600;
          
          &:hover{
-            color:${({theme})=> theme.colors.primary};
+            color:${({ theme }) => theme.colors.primary};
          }
       }
    }
