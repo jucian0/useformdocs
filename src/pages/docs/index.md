@@ -30,11 +30,11 @@ this approach prevents you to type more code to convert an object from form to b
 ## Installation
 
 ```bash
-  npm i @use-form/use-form
+npm i @use-form/use-form
 ```
 
 ```bash
-  yarn add @use-form/use-form
+yarn add @use-form/use-form
 ```
 
 ## Usage
@@ -65,9 +65,9 @@ const {
 Use dot notation to create advanced objects or to map object values. Type an entry name and type or an entry property object.
 
 ```jsx
-   <input placeholder="Name" {...register("name")}/>
-   <input placeholder="E-mail" type="email" {...register("email")}/>
-   <Range {...register("score")}/>
+<input placeholder="Name" {...register("name")}/>
+<input placeholder="E-mail" type="email" {...register("email")}/>
+<Range {...register("score")}/>
 ```
 
 ### [Post](https://dev.to/jucian0/building-forms-with-useform-1cna)
