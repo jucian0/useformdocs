@@ -17,9 +17,8 @@ export default function Footer() {
         </FooterLogo>
         <FooterInformation>
           <h1>Docs</h1>
-          <a target="_blank" href={`${config.path}docs`}>Getting stated</a>
-          <a target="_blank" href={`${config.path}api`}>API</a>
-          <a target="_blank" href={`${config.path}docs`}>Docs</a>
+          <Link href={`${config.path}docs/quick-start`}>Quick start</Link>
+          <Link href={`${config.path}docs`}>Docs</Link>
         </FooterInformation>
         <FooterInformation>
           <h1>Community</h1>
