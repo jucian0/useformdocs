@@ -55,14 +55,11 @@ function ControlledForm() {
       <Select
         options={options}
         onChange={(e) => setFieldValue("candies.iceCream", e)}
-        onChange={() => setFieldValue("candies.iceCrem")}
       />
       <DatePicker
-        className="form-control mw-100"
         showPopperArrow={false}
         selected={values.date}
         onChange={(e) => setFieldValue("date", e.value)}
-        onChange={() => setFieldValue("date")}
       />
     </>
   );
