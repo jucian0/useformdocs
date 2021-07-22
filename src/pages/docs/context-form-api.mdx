@@ -9,8 +9,9 @@ import { DefaultSeo } from 'next-seo'
 # FormContext
 
 ## Description
-FormContext provides a way to share a form state to another components in the tree.
+FormContext provides a way to share a form state to other components in the tree. FormContext is used with `useForm`, the values returned by useForm should be passed in value property.
 
+This resource is useful when you want o use the form state in many components, for instance, if you have a multi-step form it's probably that you have a component that returns this step system, and every step is a part of the same form, In this case, you can use `FormContext` to share the form state with all steps.
 ## Usage
 
 ```jsx
