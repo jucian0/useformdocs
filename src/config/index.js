@@ -10,7 +10,7 @@ export default {
   twitter: "https://twitter.com/juciano_barbosa",
   branch: 'master',
   siteName: 'useForm',
-  siteSlogan: 'useFom provides a way to create complex forms easily.',
+  siteSlogan: 'useForm provides a way to create complex forms easily.',
   path: '/',
   titleSuffix: ' – useForm',
   nextLinks: true,
