@@ -178,3 +178,15 @@ export function Pre({ children }) {
       </StyledPre>
    )
 }
+
+export const Blockquote = styled.blockquote`
+   background-color:${({ theme }) => theme.colors.border};
+   padding:1px 0 1px 3px;
+   border-radius:5px;
+   border-left: 3px solid ${({ theme }) => theme.colors.primary};
+   font-style:italic;
+   & p{
+      margin-top:12px;
+      margin-bottom:12px;
+   }
+`

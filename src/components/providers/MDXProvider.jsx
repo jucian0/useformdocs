@@ -1,7 +1,7 @@
 import React from 'react'
 import { MDXProvider } from '@mdx-js/react'
 import CodeBlock from '../codeblock'
-import { H1, H2, P, Pre, H3, H4, UL, LI, A, Table, Image } from '../md'
+import { H1, H2, P, Pre, H3, H4, UL, LI, A, Table, Image, Blockquote } from '../md'
 
 const mdComponents = {
   code: CodeBlock,
@@ -16,7 +16,8 @@ const mdComponents = {
   img: Image,
   table: Table,
   Inline: Pre,
-  pre: Pre
+  pre: Pre,
+  blockquote:Blockquote
 }
 
 export default ({ children }) => (
