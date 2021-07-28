@@ -8,17 +8,29 @@ import Demo from '../../components/demo';
   description="By default, useForm work with yup validation schema, and you can pass a validation schema as a parameter in useForm hook."
 />
 
-# Forms valodation
+# Forms validations
+
+## Validation 
+
+Every website with forms should have validations, but what are form validations? Go to any popular site with a registration form, and you will notice that they provide feedback when you don't enter your data in the format they are expecting. You'll get messages such as:
+ - "This field is required" (You can't leave this field blank). 
+ - "Please enter your phone number in the format xxx-xxxx" (A specific data format is required for it to be considered valid). 
+ - "Please enter a valid email address" (the data you entered is not in the right format). 
+ - "Your password needs to be between 8 and 30 characters long and contain one uppercase letter, one symbol, and a number." (A very specific data format is required for your data).
+
+### But why is this so important?
+
+Form validations are important to validate if the data is in the correct format and within the constraints set by the application. Usually, web applications have server-side and client-side validations.
+
+Server-side validations are the last part of the validation, which means, even if the data is in the correct format it's possible that the data can't be persisted because some data can't be duplicated like email or username, this kind of validation is done in server-side. Client-side validation deal with incorrect data format, like a valid email, or a valid password, which means, that before the data is submitted the client-side validates if it is a valid data format.
 
 ## Description
 
-When working with real application validations forms are very common because this is the way you can verify if the input's value is correct or not.
-There are several validations solutions available, but when using `useForm` the default solution is Yup. With yup the process of validations is very simple and powerful.
+When working with real application validations forms are very common because this is the way you can verify if the input's value is correct or not. There are several validations solutions available, but when using `useForm` the default solution is Yup. With yup the process of validations is very simple and powerful.
 
-The `useform` returns an error object, that has all errors, and this object is updated every time the input is changed or when the form is submitted if you are using an uncontrolled form.
+The `useForm` returns an error object, that has all errors, and this object is updated every time the input is changed or when the form is submitted if you are using an uncontrolled form.
 
-It's important to remember that to show error the correct way you need knows if an input with error is touched or not.
-You can discover this information with an object called touched, this object has all properties of the initial values object but instead of values, the object has a boolean value, this boolean value shows you if a specific input was touched.
+It's important to remember that to show error the correct way you need to know if an input with error is touched or not. You can discover this information with an object called touched, this object has all properties of the initial values object but instead of values, the object has a boolean value, this boolean value shows you if a specific input was touched.
 
 ## Usage
 
@@ -51,6 +63,9 @@ function ControlledForm() {
     initialValues,
     validationSchema,
   });
+
+  const {errors, touched} = state;
+
   return (
     <>
       <input {...register("name")} />
