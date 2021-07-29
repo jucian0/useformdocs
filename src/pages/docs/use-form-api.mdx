@@ -8,8 +8,10 @@ import { DefaultSeo } from 'next-seo'
 
 # useForm Hook
 
+`useForm` is a principal part of this package, this hook provides many resources to create powerful forms without effort. Below, you can see a complete description of all those resources:
+
 ### useForm
-Object properties that useForm function receives:
+So, let start with the principal, let's talk about `useForm`. This function receives an argument with some properties, that you can see below:
 
 | Property           |                                  Description                                  |
 | ------------------ | :---------------------------------------------------------------------------: |
@@ -20,10 +22,9 @@ Object properties that useForm function receives:
 | `debounced`        |        This optional property determines if the fields are debounced.         |
 | `schemaValidation` |           This optional property receives a yup schema validation.            |
 
-This function update the form state, when using this function it's possible to pass an object or a callback function, this function receives a state as parameter.
-This aproach turn the form state update straightforward.
+`useForm` uses these properties to manage the values, errors, and touched state of the form. 
 
-useForm receives a object with some optional properties, and setForm works the same way, it's possible to omit some properties when run setForm,
+`useForm` receives a object with some optional properties, and setForm works the same way, it's possible to omit some properties when run setForm,
 but the object received will replace the current state of form.
 
 ```javascript
@@ -40,7 +41,7 @@ setForm( state => ({
 setForm({
    initialValues:newValues,
    initialErrors:{...},
-   initiaalTouched:{...}
+   initialTouched:{...}
    ...
 })
 
@@ -70,7 +71,7 @@ const newValues = {...}
 setFieldValues( state => ({
    ...state,
     ...newValues
-})) // callback functiton should return a object with the same shape of initialValues.
+})) // callback function should return a object with the same shape of initialValues.
 
 //.....or....//
 
@@ -116,7 +117,7 @@ const newTouched = {...}
 setFieldsTouched( state => ({
    ...state,
 ...newTouched
-})) // callback functiton should return a object with the same shape of initialTouched.
+})) // callback function should return a object with the same shape of initialTouched.
 
 //.....or....//
 
@@ -162,7 +163,7 @@ const newErrors = {...}
 setFieldsError( state => ({
    ...state,
 ...newErrors
-})) // callback functiton should return a object with the same shape of formik initial errors.
+})) // callback function should return a object with the same shape of form initial errors.
 
 //.....or....//
 
@@ -248,7 +249,7 @@ function handleSubmit(e, isValid){
 }
 
 <Input placeholder="Name" {register('person.name')}/>
-<Button onClick={onSubmit(handleSubmimt)}>Send</Button>
+<Button onClick={onSubmit(handleSubmit)}>Send</Button>
 ```
 
 If has any form errors the state of errors will change even if using the uncontrolled form.
