@@ -1,12 +1,21 @@
 import React, { useLayoutEffect, useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { useRouter } from 'next/router'
+import { Helmet } from 'react-helmet'
 import MDXProvider from '../components/providers/MDXProvider'
 import { lightTheme, GlobalStyle, darkTheme } from '../components/providers/theme'
 import { ThemeContext } from '../components/providers/themeContext'
 import DocsLayout from '../layouts/docsLayout'
 import HomeLayout from '../layouts/homeLayout'
 import config from '../config'
+
+
+const Headers = ()=>(
+  <Helmet>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" />
+  </Helmet>
+)
 
 
 export default ({ Component, pageProps }) => {
@@ -47,6 +56,7 @@ export default ({ Component, pageProps }) => {
               <Component {...pageProps} />
             </DocsLayout>
           </MDXProvider>
+          <Headers />
           <GlobalStyle />
         </ThemeProvider>
       </ThemeContext.Provider>
@@ -62,6 +72,7 @@ export default ({ Component, pageProps }) => {
             <Component {...pageProps} />
           </HomeLayout>
         </MDXProvider>
+        <Headers />
         <GlobalStyle />
       </ThemeProvider>
     </ThemeContext.Provider>

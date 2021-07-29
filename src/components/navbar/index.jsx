@@ -35,7 +35,7 @@ function Navbar({ setOpen }) {
           <Links>
             {
               Config.navLinks.map(item => (
-                <Link href={item.path}>{item.label}</Link>
+                <Link key={item.path} href={item.path}>{item.label}</Link>
               ))
             }
           </Links>
@@ -63,7 +63,7 @@ function Navbar({ setOpen }) {
         <div>
           {
             Config.navLinks.map(item => (
-              <Link href={item.path}>{item.label}</Link>
+              <Link key={item.path} href={item.path}>{item.label}</Link>
             ))
           }
         </div>
