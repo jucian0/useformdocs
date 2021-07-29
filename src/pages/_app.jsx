@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState, useCallback } from 'react'
+import React, { useLayoutEffect, useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { useRouter } from 'next/router'
 import MDXProvider from '../components/providers/MDXProvider'
@@ -7,12 +7,6 @@ import { ThemeContext } from '../components/providers/themeContext'
 import DocsLayout from '../layouts/docsLayout'
 import HomeLayout from '../layouts/homeLayout'
 import config from '../config'
-
-
-const useForceUpdate = () => {
-  const [, updateState] = useState();
-  return useCallback(() => updateState({}), []);
-}
 
 
 export default ({ Component, pageProps }) => {
@@ -43,11 +37,7 @@ export default ({ Component, pageProps }) => {
 
   }, [])
 
-
   if (pathname.startsWith('/doc')) {
-    
-    useForceUpdate()
-
     return (
       <ThemeContext.Provider value={{ theme, setTheme: handleTheme }}>
         <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
