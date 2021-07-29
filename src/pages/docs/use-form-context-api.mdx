@@ -8,11 +8,15 @@ import { DefaultSeo } from 'next-seo'
 
 # useFormContext
 
+## Knowledge Base
+
+> Accepts a context object (the value returned from React.createContext) and returns the current context value for that context. The current context value is determined by the value prop of the nearest `<MyContext.Provider>` above the calling component in the tree.
 
 ## Description
-`useFormContext` provides a useForm hook resources, and you can use it to get; state, functions to use in another component in them same tree.
 
-When you use this hook make sure that you have a FormContextProvider in the root of the components tree.
+The `useFormContext` allow you to use the `useForm` state in another components in the same tree.
+
+When you use this hook, make sure that you have a FormContextProvider in the root of the components tree.
 
 | Property  |                               Description                               |
 | --------- | :---------------------------------------------------------------------: |
@@ -20,11 +24,46 @@ When you use this hook make sure that you have a FormContextProvider in the root
 | `isValid` |                            Boolean property                             |
 
 ## Usage
+
 ```jsx
 import UserFormContext from './'
 
-const { state, register,... } = useFormContext(UserFormContext)
+function Form(){
+
+  const form = useForm(...)
+
+  return (
+    <FormContext.Provider value={form}>
+      <ChildForm1/>
+      <ChildForm2/>
+    </FormContext.Provider>
+  )
+}
+
+function ChildForm1(){
+
+  const { state, register,... } = useFormContext()
+
+  return(
+    <>
+      {/* component conte t */}
+    </>
+  )
+}
+
+function ChildForm2(){
+
+  const { state, register,... } = useFormContext()
+  
+  return(
+    <>
+      {/* component conte t */}
+    </>
+  )
+}
+
 ```
-If you want to know more about `useForm` resource please visit this page [useForm](use-form-api).
+
+If you want to know more about `useForm`, please, visit this page [useForm](use-form-api).
 
 More details about React context [React Docs](https://reactjs.org/docs/context.html).

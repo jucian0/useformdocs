@@ -1,14 +1,14 @@
 import { DefaultSeo } from 'next-seo'
 
 <DefaultSeo
-  title="ContextForm"
-  titleTemplate="ContextForm | useForm"
-  description="ContextForm provides a way to share a form state to other components in the tree."
+  title="FormContext"
+  titleTemplate="FormContext | useForm"
+  description="FormContext provides a way to share a form state to other components in the tree."
 />
 
-# ContextForm
+# FormContext
 
-## Context
+## Knowledge Base
 >Context provides a way to pass data through the component tree without having to pass props down manually at every level.
 
 Working with React it is very common to pass the data top-down via props, but it's not the better way if you have many props, you can do it better with Context.
@@ -17,10 +17,10 @@ Working with React it is very common to pass the data top-down via props, but it
 
 You can find more information about Context in the official documentation https://reactjs.org/docs/context.html
 
-## Why you my need ContextForm?
-ContextForm provides a way to share a form state to other components in the tree. ContextForm is used with `useForm`, the values returned by useForm should be passed in value property.
+## Why you my need FormContext?
+FormContext provides a way to share a form state to other components in the tree. FormContext is used with `useForm`, the values returned by useForm should be passed in value property.
 
-This resource is useful when you want o use the form state in many components, for instance, if you have a multi-step form it's probably that you have a component that returns this step system, and every step is a part of the same form, In this case, you can use `ContextForm` to share the form state with all steps.
+This resource is useful when you want o use the form state in many components, for instance, if you have a multi-step form it's probably that you have a component that returns this step system, and every step is a part of the same form, In this case, you can use `FormContext` to share the form state with all steps.
 ## Usage
 
 ```jsx
@@ -28,10 +28,10 @@ This resource is useful when you want o use the form state in many components, f
 const form = useForm(...)
 
 
-<ContextForm.Provider value={form}>
+<FormContext.Provider value={form}>
 
  {/* ....another components */}
 
-</ContextForm.Provider>
+</FormContext.Provider>
 
 ```
