@@ -1,5 +1,5 @@
 import { DefaultSeo } from 'next-seo'
-import Demo from '../../components/demo';
+import Demo from '../../components/demo'
 
 <DefaultSeo
   title="Debounced form"
@@ -15,14 +15,10 @@ Debounce function forces a function to wait a certain amount of time before runn
 
 The debounce parameter delays the updating of the state until the user has stopped changing inputs for a predetermined amount of time.
 
-<br />
 The input value is set to state values and then updated via React events. Defining a form’s input value via state is considered a controlled component. For controlled inputs, you will need a corresponding state and then a function to update that state with changes.
-
 
 [React Docs](https://reactjs.org/docs/forms.html)
 
-
-<br />
 It means that whenever state is changed the component, it is rendered again.
 
 If you want to use this kind of form, you need only pass property `debounce: number` whit a time in object received in `useForm` hook.
@@ -44,9 +40,9 @@ const initialValues = {
   complextData: [
     {
       first: 'testComplexData',
-      score: 45
-    }
-  ]
+      score: 45,
+    },
+  ],
 }
 
 const { state, register } = useForm({ initialValues, debounce: 300 })
@@ -61,4 +57,4 @@ Use dot notation to create advanced objects or to map object values. Type an ent
 
 ## Demo
 
-<Demo url="https://codesandbox.io/s/use-form-debounced-form-co37c"/>
+<Demo url="https://codesandbox.io/s/use-form-debounced-form-co37c" />
