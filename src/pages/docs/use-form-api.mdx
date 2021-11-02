@@ -11,18 +11,18 @@ import { DefaultSeo } from 'next-seo'
 `useForm` is a principal part of this package, this hook provides many resources to create powerful forms without effort. Below, you can see a complete description of all those resources:
 
 ### useForm
+
 So, let start with the principal, let's talk about `useForm`. This function receives an argument with some properties, that you can see below:
 
-| Property           |                                  Description                                  |
-| ------------------ | :---------------------------------------------------------------------------: |
-| `initialValues`    |    This optional property receives an object with initial values of form.     |
-| `initialErrors`    |    This optional property receives an object with initial errors of form.     |
-| `initialTouched`   | This optional property receives a object with initial touched fields of form. |
-| `isControlled`     |        This optional property determines if the fields are controlled.        |
-| `debounced`        |        This optional property determines if the fields are debounced.         |
-| `schemaValidation` |           This optional property receives a yup schema validation.            |
+| Property           |                                                  Description                                                  |
+| ------------------ | :-----------------------------------------------------------------------------------------------------------: |
+| `initialValues`    |                    This optional property receives an object with initial values of form.                     |
+| `initialErrors`    |                    This optional property receives an object with initial errors of form.                     |
+| `initialTouched`   |                 This optional property receives a object with initial touched fields of form.                 |
+| `mode`             | This optional property determines if the form is in `onChange` or `onSubmit` or `onBlur` or `debounced` mode. |
+| `schemaValidation` |                           This optional property receives a yup schema validation.                            |
 
-`useForm` uses these properties to manage the values, errors, and touched state of the form. 
+`useForm` uses these properties to manage the values, errors, and touched state of the form.
 
 `useForm` receives a object with some optional properties, and setForm works the same way, it's possible to omit some properties when run setForm,
 but the object received will replace the current state of form.
@@ -60,8 +60,8 @@ resetForm()
 
 ### setFieldsValue
 
-This function receives a new values object or a callback function that receives the current state by parameter.
-If uses a callback function is expected that this function returns an object with the same shape of the state, if pass an object by parameter,
+This function receives a object or a callback function that receives the current state by parameter.
+If uses a callback function is expected that this function returns an object with the same type of the state, if pass an object by parameter,
 this object can be a partial object of initial values, but this object will replace all object properties of the current state of form
 
 ```javascript
@@ -253,3 +253,17 @@ function handleSubmit(e, isValid){
 ```
 
 If has any form errors the state of errors will change even if using the uncontrolled form.
+
+## handleChange
+
+This is a simple function that changes the value of a field. HandleChange allows you to use controlled inputs without the `register` function, to use handleChange its' necessary to pass the field name and the value of the field.
+.HandleChange is specially useful when using float label.
+
+> Float labels are used to show a label when the field is focused, but if the field is empty the label will be displayed small. Most of float label implementation uses the input value to determine if the label should be above the value or not, and the register function uses defaultValue, so for this reason, if you want to use the float label you should use the handleChange function.
+
+```jsx
+const {handleChange, onSubmit} = useForm(...)
+
+<Input placeholder="Name" onChange={handleChange} name="name"/>
+<Butt
+```

@@ -1,5 +1,5 @@
 import { DefaultSeo } from 'next-seo'
-import Demo from '../../components/demo';
+import Demo from '../../components/demo'
 
 <DefaultSeo
   title="Controlled form"
@@ -27,21 +27,29 @@ Controlled inputs are the most popular in the react ecosystem, are easier to wri
  */
 const initialValues = {
   data1: 'test',
-  complextData: [
+  nested: [
     {
       first: 'testComplexData',
-      score: 45
-    }
-  ]
+      score: 45,
+    },
+  ],
 }
 
 const { state, register, resetForm, onSubmit } = useForm({
-  isControlled: true,
-  initialValues
+  mode: 'onChange',
+  initialValues,
 })
 ```
 
 Use dot notation to create advanced objects or to map object values. Type an entry name and type or an entry property object.
+
+> Dot notation is used to access nested objects. For example, if you have an object with a nested object, you can access the nested object using dot notation; `info.name`.
+
+<br />
+
+> You can also use dot notation to access nested arrays. For example, if you
+> have an object with a nested array, you can access the nested array using dot notation;
+> `info.array[2]`.
 
 ```jsx
 
@@ -50,8 +58,8 @@ Use dot notation to create advanced objects or to map object values. Type an ent
    }
 
   <input {...register('data1', 'text')} />
-  <input {...register('complexData.0.first', 'text')} />
-  <input type="number" {...register('complexData.0.score')} />
+  <input {...register('nested.0.first', 'text')} />
+  <input type="number" {...register('nested.0.score')} />
 
   <button type="submit" onClick={onSubmit(handleSubmit)}>Submit</button>
   <button type="reset" onClick={resetForm}>Reset</button>
@@ -59,4 +67,4 @@ Use dot notation to create advanced objects or to map object values. Type an ent
 
 ## Demo
 
-<Demo url="https://codesandbox.io/s/use-form-controlled-form-kihgy"/>
+<Demo url="https://codesandbox.io/s/use-form-controlled-form-kihgy" />

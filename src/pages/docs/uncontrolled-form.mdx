@@ -1,5 +1,5 @@
 import { DefaultSeo } from 'next-seo'
-import Demo from '../../components/demo';
+import Demo from '../../components/demo'
 
 <DefaultSeo
   title="Uncontrolled form"
@@ -57,6 +57,14 @@ const { state, resetForm, onSubmit, register } = useForm(...)
 
 Use dot notation to create advanced objects or to map object values. Type an entry name and type or an entry property object.
 
+> Dot notation is used to access nested objects. For example, if you have an object with a nested object, you can access the nested object using dot notation; `info.name`.
+
+<br />
+
+> You can also use dot notation to access nested arrays. For example, if you
+> have an object with a nested array, you can access the nested array using dot notation;
+> `info.array[2]`.
+
 ```jsx
 
 function handleSubmit(e, isValid){
@@ -74,4 +82,4 @@ function handleSubmit(e, isValid){
 
 ## Demo
 
-<Demo url="https://codesandbox.io/s/use-form-uncontrolled-form-9ybmz"/>
+<Demo url="https://codesandbox.io/s/use-form-uncontrolled-form-9ybmz" />

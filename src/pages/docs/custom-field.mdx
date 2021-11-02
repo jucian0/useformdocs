@@ -15,7 +15,7 @@ When we work with react, sometimes we need a custom element to provide advanced 
 like a custom date input, custom select field or a tag creator,
 for all these cases we can use many options of components provided by the community.
 But these custom elements cannot simulate de same events as a native element,
-for this reason, useForm cannot provide the same experience what useForm provide with a native element like `<input>`,
+for this reason, useForm cannot provide the same experience as useForm provide for a native element like `<input>`,
 but we can use useForm to manage this kind of component like a controlled element.
 
 Custom inputs receive generics properties, onChange, value, and property to simulate onBlur event.
@@ -26,6 +26,14 @@ When you use a custom input every change that happened in the input state is rep
 `useForm` provides a `custom` function, this function as a link with input and a object property of form state.
 
 Use dot notation to create advanced objects or to map object values. Type an entry name and type or an entry property object.
+
+> Dot notation is used to access nested objects. For example, if you have an object with a nested object, you can access the nested object using dot notation; `info.name`.
+
+<br />
+
+> You can also use dot notation to access nested arrays. For example, if you
+> have an object with a nested array, you can access the nested array using dot notation;
+> `info.array[2]`.
 
 ```jsx
 import { useForm } from '@use-form/use-form'
@@ -65,3 +73,5 @@ function ControlledForm() {
   )
 }
 ```
+
+> Even if you use uncontrolled forms, `useForm` can't provide you the same experience as native elements. For this reason, for every custom input update, the form state will be updated too.
