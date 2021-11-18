@@ -23,7 +23,7 @@ export default {
   defaultMenuCollapsed: false,
   font: true,
   footer: true,
-  footerText: 'MIT 2020 © useForm.',
+  footerText: 'MIT 2021 © useForm.',
   footerEditOnGitHubLink: true,
   logo: (
     <React.Fragment>
