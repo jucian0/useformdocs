@@ -2,7 +2,7 @@ export const Config= {
   repository: 'https://github.com/use-form/use-form',
   docsRepository: 'https://github.com/use-form/docs',
   twitter: "https://twitter.com/juciano_barbosa",
-  branch: 'master',
+  branch: 'main',
   siteName: 'Use Form',
   siteSlogan: 'Use Form provides a way to create complex forms easily.',
   path: '/',

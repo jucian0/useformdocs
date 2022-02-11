@@ -11,7 +11,7 @@ import { useContext, useLayoutEffect, useState } from "react";
 import { StylesContext, ThemeContext } from "./styles.context";
 
 export const meta: MetaFunction = () => {
-  return { title: "React Create Form" };
+  return { title: "Use Form" };
 };
 
 export const links = () => [
