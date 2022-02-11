@@ -1,0 +1,196 @@
+{
+  "version": "65c7a2b9",
+  "entry": {
+    "module": "/build/entry.client-HHINL4K2.js",
+    "imports": [
+      "/build/_shared/chunk-74LYYSTS.js",
+      "/build/_shared/chunk-E7VMOUYL.js"
+    ]
+  },
+  "routes": {
+    "root": {
+      "id": "root",
+      "path": "",
+      "module": "/build/root-ZGFV5VEL.js",
+      "imports": [
+        "/build/_shared/chunk-RBQTXU5C.js",
+        "/build/_shared/chunk-MIIZQ3TK.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/docs": {
+      "id": "routes/docs",
+      "parentId": "root",
+      "path": "docs",
+      "module": "/build/routes/docs-VLHTNMVE.js",
+      "imports": [
+        "/build/_shared/chunk-BYWGXYE5.js",
+        "/build/_shared/chunk-EAPMLA3G.js",
+        "/build/_shared/chunk-VIDMVDZJ.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/docs/concept": {
+      "id": "routes/docs/concept",
+      "parentId": "routes/docs",
+      "path": "concept",
+      "module": "/build/routes/docs/concept-LJIUZKGU.js",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/docs/create-form": {
+      "id": "routes/docs/create-form",
+      "parentId": "routes/docs",
+      "path": "create-form",
+      "module": "/build/routes/docs/create-form-ITNH3HO6.js",
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/docs/custom-components": {
+      "id": "routes/docs/custom-components",
+      "parentId": "routes/docs",
+      "path": "custom-components",
+      "module": "/build/routes/docs/custom-components-LEDGNC52.js",
+      "imports": [
+        "/build/_shared/chunk-6NXASYWP.js",
+        "/build/_shared/chunk-P7KKQRXZ.js",
+        "/build/_shared/chunk-MIIZQ3TK.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/docs/debounced-form": {
+      "id": "routes/docs/debounced-form",
+      "parentId": "routes/docs",
+      "path": "debounced-form",
+      "module": "/build/routes/docs/debounced-form-BPJWOEBX.js",
+      "imports": [
+        "/build/_shared/chunk-6NXASYWP.js",
+        "/build/_shared/chunk-P7KKQRXZ.js",
+        "/build/_shared/chunk-MIIZQ3TK.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/docs/form-validation": {
+      "id": "routes/docs/form-validation",
+      "parentId": "routes/docs",
+      "path": "form-validation",
+      "module": "/build/routes/docs/form-validation-7LAVHQNN.js",
+      "imports": [
+        "/build/_shared/chunk-6NXASYWP.js",
+        "/build/_shared/chunk-P7KKQRXZ.js",
+        "/build/_shared/chunk-MIIZQ3TK.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/docs/index": {
+      "id": "routes/docs/index",
+      "parentId": "routes/docs",
+      "index": true,
+      "module": "/build/routes/docs/index-V6FP36UY.js",
+      "imports": [
+        "/build/_shared/chunk-6NXASYWP.js",
+        "/build/_shared/chunk-P7KKQRXZ.js",
+        "/build/_shared/chunk-MIIZQ3TK.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/docs/native-elements": {
+      "id": "routes/docs/native-elements",
+      "parentId": "routes/docs",
+      "path": "native-elements",
+      "module": "/build/routes/docs/native-elements-6NIF4MGP.js",
+      "imports": [
+        "/build/_shared/chunk-6NXASYWP.js",
+        "/build/_shared/chunk-P7KKQRXZ.js",
+        "/build/_shared/chunk-MIIZQ3TK.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/docs/onchange-form": {
+      "id": "routes/docs/onchange-form",
+      "parentId": "routes/docs",
+      "path": "onchange-form",
+      "module": "/build/routes/docs/onchange-form-LPEVVCQU.js",
+      "imports": [
+        "/build/_shared/chunk-6NXASYWP.js",
+        "/build/_shared/chunk-P7KKQRXZ.js",
+        "/build/_shared/chunk-MIIZQ3TK.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/docs/onsubmit-form": {
+      "id": "routes/docs/onsubmit-form",
+      "parentId": "routes/docs",
+      "path": "onsubmit-form",
+      "module": "/build/routes/docs/onsubmit-form-XXJH45W6.js",
+      "imports": [
+        "/build/_shared/chunk-6NXASYWP.js",
+        "/build/_shared/chunk-P7KKQRXZ.js",
+        "/build/_shared/chunk-MIIZQ3TK.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/docs/quick-start": {
+      "id": "routes/docs/quick-start",
+      "parentId": "routes/docs",
+      "path": "quick-start",
+      "module": "/build/routes/docs/quick-start-NDMFKEQR.js",
+      "imports": [
+        "/build/_shared/chunk-6NXASYWP.js",
+        "/build/_shared/chunk-P7KKQRXZ.js",
+        "/build/_shared/chunk-MIIZQ3TK.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    },
+    "routes/index": {
+      "id": "routes/index",
+      "parentId": "root",
+      "index": true,
+      "module": "/build/routes/index-5CPP22M6.js",
+      "imports": [
+        "/build/_shared/chunk-BYWGXYE5.js",
+        "/build/_shared/chunk-P7KKQRXZ.js",
+        "/build/_shared/chunk-VIDMVDZJ.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false,
+      "hasCatchBoundary": false,
+      "hasErrorBoundary": false
+    }
+  },
+  "url": "/build/manifest-65C7A2B9.js"
+}

@@ -1,7 +1,8 @@
-.next/
-node_modules/
-/npm-debug.log
-.env
-.DS_Store
-/.env.production
-yarn.lock
+node_modules
+
+.cache
+.vercel
+.output
+
+public/build
+api/_build
