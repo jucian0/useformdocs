@@ -1,6 +1,6 @@
 export const Config= {
-  repository: 'https://github.com/use-form/use-form',
-  docsRepository: 'https://github.com/use-form/docs',
+  repository: 'https://github.com/useForm/useForm',
+  docsRepository: 'https://github.com/useForm/docs',
   twitter: "https://twitter.com/juciano_barbosa",
   branch: 'main',
   siteName: 'Use Form',
