@@ -1,5 +1,5 @@
 {
-  "version": "65c7a2b9",
+  "version": "dc38dd28",
   "entry": {
     "module": "/build/entry.client-HHINL4K2.js",
     "imports": [
@@ -11,7 +11,7 @@
     "root": {
       "id": "root",
       "path": "",
-      "module": "/build/root-ZGFV5VEL.js",
+      "module": "/build/root-YG3SW6YQ.js",
       "imports": [
         "/build/_shared/chunk-RBQTXU5C.js",
         "/build/_shared/chunk-MIIZQ3TK.js"
@@ -25,9 +25,9 @@
       "id": "routes/docs",
       "parentId": "root",
       "path": "docs",
-      "module": "/build/routes/docs-VLHTNMVE.js",
+      "module": "/build/routes/docs-KUXVK3TG.js",
       "imports": [
-        "/build/_shared/chunk-BYWGXYE5.js",
+        "/build/_shared/chunk-CCUP2QBN.js",
         "/build/_shared/chunk-EAPMLA3G.js",
         "/build/_shared/chunk-VIDMVDZJ.js"
       ],
@@ -180,9 +180,9 @@
       "id": "routes/index",
       "parentId": "root",
       "index": true,
-      "module": "/build/routes/index-5CPP22M6.js",
+      "module": "/build/routes/index-46AZS246.js",
       "imports": [
-        "/build/_shared/chunk-BYWGXYE5.js",
+        "/build/_shared/chunk-CCUP2QBN.js",
         "/build/_shared/chunk-P7KKQRXZ.js",
         "/build/_shared/chunk-VIDMVDZJ.js"
       ],
@@ -192,5 +192,5 @@
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-65C7A2B9.js"
+  "url": "/build/manifest-DC38DD28.js"
 }
