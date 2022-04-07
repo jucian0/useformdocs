@@ -1,5 +1,5 @@
 {
-  "version": "b82adaec",
+  "version": "2c4747c3",
   "entry": {
     "module": "/build/entry.client-5A65O65J.js",
     "imports": [
@@ -11,7 +11,7 @@
     "root": {
       "id": "root",
       "path": "",
-      "module": "/build/root-E7WN6B7I.js",
+      "module": "/build/root-L3D6QIE5.js",
       "imports": [
         "/build/_shared/chunk-RBQTXU5C.js",
         "/build/_shared/chunk-MIIZQ3TK.js"
@@ -192,5 +192,5 @@
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-B82ADAEC.js"
+  "url": "/build/manifest-2C4747C3.js"
 }

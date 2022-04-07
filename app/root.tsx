@@ -12,7 +12,6 @@ import type { MetaFunction } from "remix";
 import { useContext, useLayoutEffect, useState } from "react";
 import { StylesContext, ThemeContext } from "./styles.context";
 import { removeTrailingSlash } from "./utils/misc";
-import { sitemap } from "./utils/sitemap";
 
 export const meta: MetaFunction = () => {
   return {
@@ -65,6 +64,7 @@ export default function App() {
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="4LPC-BqM5jWLLYYDzJ740VSf8AHCFvgneDKeM2d2B3k" />
         <Meta />
         <link
           rel="canonical"
