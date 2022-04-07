@@ -1,9 +1,9 @@
 {
-  "version": "dc38dd28",
+  "version": "b82adaec",
   "entry": {
-    "module": "/build/entry.client-HHINL4K2.js",
+    "module": "/build/entry.client-5A65O65J.js",
     "imports": [
-      "/build/_shared/chunk-74LYYSTS.js",
+      "/build/_shared/chunk-G6RGT2M3.js",
       "/build/_shared/chunk-E7VMOUYL.js"
     ]
   },
@@ -11,13 +11,13 @@
     "root": {
       "id": "root",
       "path": "",
-      "module": "/build/root-YG3SW6YQ.js",
+      "module": "/build/root-E7WN6B7I.js",
       "imports": [
         "/build/_shared/chunk-RBQTXU5C.js",
         "/build/_shared/chunk-MIIZQ3TK.js"
       ],
       "hasAction": false,
-      "hasLoader": false,
+      "hasLoader": true,
       "hasCatchBoundary": false,
       "hasErrorBoundary": false
     },
@@ -25,9 +25,9 @@
       "id": "routes/docs",
       "parentId": "root",
       "path": "docs",
-      "module": "/build/routes/docs-KUXVK3TG.js",
+      "module": "/build/routes/docs-D7GS73WD.js",
       "imports": [
-        "/build/_shared/chunk-CCUP2QBN.js",
+        "/build/_shared/chunk-I7HJFV36.js",
         "/build/_shared/chunk-EAPMLA3G.js",
         "/build/_shared/chunk-VIDMVDZJ.js"
       ],
@@ -40,7 +40,7 @@
       "id": "routes/docs/concept",
       "parentId": "routes/docs",
       "path": "concept",
-      "module": "/build/routes/docs/concept-LJIUZKGU.js",
+      "module": "/build/routes/docs/concept-4GHDY7SR.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
@@ -50,7 +50,7 @@
       "id": "routes/docs/create-form",
       "parentId": "routes/docs",
       "path": "create-form",
-      "module": "/build/routes/docs/create-form-ITNH3HO6.js",
+      "module": "/build/routes/docs/create-form-O2ORMTBZ.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
@@ -60,9 +60,9 @@
       "id": "routes/docs/custom-components",
       "parentId": "routes/docs",
       "path": "custom-components",
-      "module": "/build/routes/docs/custom-components-LEDGNC52.js",
+      "module": "/build/routes/docs/custom-components-NOH5WPYL.js",
       "imports": [
-        "/build/_shared/chunk-6NXASYWP.js",
+        "/build/_shared/chunk-7R2U4GOE.js",
         "/build/_shared/chunk-P7KKQRXZ.js",
         "/build/_shared/chunk-MIIZQ3TK.js"
       ],
@@ -75,9 +75,9 @@
       "id": "routes/docs/debounced-form",
       "parentId": "routes/docs",
       "path": "debounced-form",
-      "module": "/build/routes/docs/debounced-form-BPJWOEBX.js",
+      "module": "/build/routes/docs/debounced-form-OSYTRKQW.js",
       "imports": [
-        "/build/_shared/chunk-6NXASYWP.js",
+        "/build/_shared/chunk-7R2U4GOE.js",
         "/build/_shared/chunk-P7KKQRXZ.js",
         "/build/_shared/chunk-MIIZQ3TK.js"
       ],
@@ -90,9 +90,9 @@
       "id": "routes/docs/form-validation",
       "parentId": "routes/docs",
       "path": "form-validation",
-      "module": "/build/routes/docs/form-validation-7LAVHQNN.js",
+      "module": "/build/routes/docs/form-validation-KVKHLRTC.js",
       "imports": [
-        "/build/_shared/chunk-6NXASYWP.js",
+        "/build/_shared/chunk-7R2U4GOE.js",
         "/build/_shared/chunk-P7KKQRXZ.js",
         "/build/_shared/chunk-MIIZQ3TK.js"
       ],
@@ -105,9 +105,9 @@
       "id": "routes/docs/index",
       "parentId": "routes/docs",
       "index": true,
-      "module": "/build/routes/docs/index-V6FP36UY.js",
+      "module": "/build/routes/docs/index-SQ3BCDMC.js",
       "imports": [
-        "/build/_shared/chunk-6NXASYWP.js",
+        "/build/_shared/chunk-7R2U4GOE.js",
         "/build/_shared/chunk-P7KKQRXZ.js",
         "/build/_shared/chunk-MIIZQ3TK.js"
       ],
@@ -120,9 +120,9 @@
       "id": "routes/docs/native-elements",
       "parentId": "routes/docs",
       "path": "native-elements",
-      "module": "/build/routes/docs/native-elements-6NIF4MGP.js",
+      "module": "/build/routes/docs/native-elements-RHPK23BH.js",
       "imports": [
-        "/build/_shared/chunk-6NXASYWP.js",
+        "/build/_shared/chunk-7R2U4GOE.js",
         "/build/_shared/chunk-P7KKQRXZ.js",
         "/build/_shared/chunk-MIIZQ3TK.js"
       ],
@@ -135,9 +135,9 @@
       "id": "routes/docs/onchange-form",
       "parentId": "routes/docs",
       "path": "onchange-form",
-      "module": "/build/routes/docs/onchange-form-LPEVVCQU.js",
+      "module": "/build/routes/docs/onchange-form-7XPZDYQP.js",
       "imports": [
-        "/build/_shared/chunk-6NXASYWP.js",
+        "/build/_shared/chunk-7R2U4GOE.js",
         "/build/_shared/chunk-P7KKQRXZ.js",
         "/build/_shared/chunk-MIIZQ3TK.js"
       ],
@@ -150,9 +150,9 @@
       "id": "routes/docs/onsubmit-form",
       "parentId": "routes/docs",
       "path": "onsubmit-form",
-      "module": "/build/routes/docs/onsubmit-form-XXJH45W6.js",
+      "module": "/build/routes/docs/onsubmit-form-WPWGDHRL.js",
       "imports": [
-        "/build/_shared/chunk-6NXASYWP.js",
+        "/build/_shared/chunk-7R2U4GOE.js",
         "/build/_shared/chunk-P7KKQRXZ.js",
         "/build/_shared/chunk-MIIZQ3TK.js"
       ],
@@ -165,9 +165,9 @@
       "id": "routes/docs/quick-start",
       "parentId": "routes/docs",
       "path": "quick-start",
-      "module": "/build/routes/docs/quick-start-NDMFKEQR.js",
+      "module": "/build/routes/docs/quick-start-KGR6G5L5.js",
       "imports": [
-        "/build/_shared/chunk-6NXASYWP.js",
+        "/build/_shared/chunk-7R2U4GOE.js",
         "/build/_shared/chunk-P7KKQRXZ.js",
         "/build/_shared/chunk-MIIZQ3TK.js"
       ],
@@ -180,9 +180,9 @@
       "id": "routes/index",
       "parentId": "root",
       "index": true,
-      "module": "/build/routes/index-46AZS246.js",
+      "module": "/build/routes/index-ZBTOFUUH.js",
       "imports": [
-        "/build/_shared/chunk-CCUP2QBN.js",
+        "/build/_shared/chunk-I7HJFV36.js",
         "/build/_shared/chunk-P7KKQRXZ.js",
         "/build/_shared/chunk-VIDMVDZJ.js"
       ],
@@ -192,5 +192,5 @@
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-DC38DD28.js"
+  "url": "/build/manifest-B82ADAEC.js"
 }
