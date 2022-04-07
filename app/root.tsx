@@ -1,14 +1,24 @@
 import {
   Links,
   LiveReload,
+  LoaderFunction,
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration
+  ScrollRestoration,
+  useMatches
 } from "remix";
 import type { MetaFunction } from "remix";
 import { useContext, useLayoutEffect, useState } from "react";
 import { StylesContext, ThemeContext } from "./styles.context";
+import { homepage } from '../package.json'
+import { useShouldHydrate } from 'remix-utils'
+
+export const loader: LoaderFunction = async ({ params }) => {
+  const { frontmatter, code } = await bundleMDX();
+  const canonical = `${homepage}/${frontmatter?.lang}${frontmatter?.slug}`;
+  return { frontmatter, code, canonical };
+};
 
 export const meta: MetaFunction = () => {
   return { title: "useForm", description: "useForm provides a easy way to create forms." };
@@ -22,6 +32,14 @@ export const links = () => [
 export default function App() {
   const styles = useContext(StylesContext);
   const [theme, setTheme] = useState('light')
+
+
+  const includeScripts = useShouldHydrate(); // from remix-utils
+  const matches = useMatches();
+  const match = matches.find((match) => match.data && match.data.canonical);
+  const canonical = match?.data.canonical;
+
+
 
   function handleTheme(selectedTheme: string) {
     if (typeof window !== "undefined") {
@@ -45,6 +63,7 @@ export default function App() {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+        {!!canonical && <link rel="canonical" href={canonical} />}
         <Meta />
         <Links />
         {styles}
@@ -60,3 +79,7 @@ export default function App() {
     </html>
   );
 }
+function bundleMDX(): { frontmatter: any; code: any; } | PromiseLike<{ frontmatter: any; code: any; }> {
+  throw new Error("Function not implemented.");
+}
+
