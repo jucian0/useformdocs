@@ -66,6 +66,16 @@ const links = [
       },
     ]
   },
+  {
+    label: 'Tutorials',
+    link: '',
+    subItems: [
+      {
+        label: 'Creating Forms',
+        link: '/docs/creating-forms'
+      },
+    ],
+  }
 ]
 
 
